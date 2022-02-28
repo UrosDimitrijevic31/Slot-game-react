@@ -1,3 +1,18 @@
 .reel {
-    margin: 10px;
+    margin: 10px 4px;
+    border: 11px dotted yellow;
+    &:first-child {
+        border-top: 11px dotted yellow;  
+        border-bottom: 11px dotted yellow;  
+        border-left: 11px dotted yellow;  
+        border-right: 0;
+     }
+ 
+     &:last-child {
+        border-top: 11px dotted yellow;  
+        border-bottom: 11px dotted yellow;  
+        border-left: 0;  
+        border-right:  11px dotted yellow;           
+     }
+    
 }

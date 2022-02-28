@@ -1,5 +1,5 @@
 import React from 'react';
-import './Game.css';
+import './Game.scss';
 import headerImage from '../../assets/images/slots-logo.png'
 import ReelsContainer from '../reelsContainer/ReelsContainer';
 import GameControls from '../gameControls/GameControls';
