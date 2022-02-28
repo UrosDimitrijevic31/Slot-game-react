@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from "react";
-import './Reel.css'
-import Item from "../Item/Item";
+import './Reel.scss'
+import Item from "../item/Item";
 import banana from '../../assets/images/banana.png';
 import cherry from '../../assets/images/cherry.png';
 import lemon  from '../../assets/images/lemon.png';
 import seven  from '../../assets/images/seven.png';
 
 const Reel = () => {
-    const imagesOfItems = [banana, cherry, lemon, seven];
+    const imagesOfItems = [banana, cherry, seven];
     const [helperArray, setHelperArray] = useState([]); 
 
     function spinOneTime(array) {

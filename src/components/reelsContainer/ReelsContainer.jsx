@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Reel from "../Reel/Reel";
-import './ReelsContainer.css'
+import Reel from "../reel/Reel";
+import './ReelsContainer.scss';
 
 const ReelsContainer = () => {
     const numberOfReels = 3;

@@ -1,6 +1,5 @@
 import React from 'react';
-import './Item.css'
-
+import './Item.scss'
 const Item = (props) => {
     return (
         <div className="item">

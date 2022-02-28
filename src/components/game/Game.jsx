@@ -1,22 +1,23 @@
 import React from 'react';
 import './Game.css';
 import headerImage from '../../assets/images/slots-logo.png'
-import ReelsContainer from '../ReelsContainer/ReelsContainer';
+import ReelsContainer from '../reelsContainer/ReelsContainer';
+import GameControls from '../gameControls/GameControls';
 
 const Game = () => {
-    return(
+    return (
         <div className='main-display'>
             <div className='header-image'>
                 <img src={headerImage} alt="slot-logo" />
             </div>
             <div className='reels'>
-                <ReelsContainer />            
+                <ReelsContainer />
             </div>
             <div className='game-controls'>
-
+                <GameControls />
             </div>
         </div>
     )
-}   
+}
 
 export default Game;
