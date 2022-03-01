@@ -1,7 +1,11 @@
-.bottom {                        
+@mixin flexRow {
     display: flex;
-    justify-content: center;
     flex-direction: row;
+}
+
+.bottom {                        
+    @include flexRow();
+    justify-content: center;
     background: linear-gradient(#2c2d2e, #1f2020);
     color: white;
 
@@ -11,18 +15,15 @@
     }
 
     .left-side {
-        display: flex;
-        flex-direction: row;
+        @include flexRow();
         width: 40%;
         justify-content: flex-end;
     }
     .middle {
-        display: flex;
-        flex-direction: row;
+        @include flexRow();
     }
     .right-side {
-        display: flex;
-        flex-direction: row;
+        @include flexRow();
         width: 40%;
     }
 }
@@ -38,14 +39,12 @@
     box-shadow: inset 0 0 2px;
 }
 
-.display-bet {
-   
-    margin: 0;
-    // 
+.display-bet {   
+    // margin: 0;
 }
 
-.change-be {
-    margin: 0px;
+.change-bet {
+    // margin: 0px;
 }
 
 hr {
@@ -62,51 +61,50 @@ hr {
     font-weight: bold;
 }
 
-.bet-one-max-container {
-    display: flex;
-    align-items: center;
+// .bet-one-max-container {
+//     display: flex;
+//     align-items: center;
 
-    .setBet{
-        cursor: pointer;
-    }
-}
+//     .setBet{
+//         cursor: pointer;
+//     }
+// }
 
-.bet-control {
-    display: flex;
-    justify-content: center;
-    flex-direction: row ;
-    align-items: center;
+// .bet-control {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: row ;
+//     align-items: center;
 
-    img {
-        cursor: pointer;
-        height: 50px;
-        width: 50px;
-    }
+//     img {
+//         cursor: pointer;
+//         height: 50px;
+//         width: 50px;
+//     }
 
-    .display-bet {
-        width: 150px;
-        text-align: center;
-        color: white;
-        background-color: #0f1a44;
-        border: 2px solid #0f1a44;
-        box-shadow: inset 0 0 2px;
-        padding: 5px 5px;
-        border-radius: 5px;
-    }
-    div {
-        margin-left: 0;
-        margin-right: 0;
-    }
+//     .display-bet {
+//         width: 150px;
+//         text-align: center;
+//         color: white;
+//         background-color: #0f1a44;
+//         border: 2px solid #0f1a44;
+//         box-shadow: inset 0 0 2px;
+//         padding: 5px 5px;
+//         border-radius: 5px;
+//     }
+//     div {
+//         margin-left: 0;
+//         margin-right: 0;
+//     }
+// }
 
-}
-
-.play-btn {
-    img {
-        height: 110px;
-        width: 110px;
-        cursor: pointer;
-    }
-}
+// .play-btn {
+//     img {
+//         height: 110px;
+//         width: 110px;
+//         cursor: pointer;
+//     }
+// }
 
 .win-container {
     display: flex;
